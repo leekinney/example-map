@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en" xmlns:ng="http://angularjs.org/" ng-app="appMaps">
+
+<head>
+    <meta charset="utf-8">
+    <title>Map example</title>
+
+    <!-- <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/foundation/4.1.6/css/foundation.min.css" /> -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/stylesheets/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Test angular map template</h1>
+    </header>
+
+    <div id="map_canvas"  class="angular-google-map-container" ng-controller="mainCtrl">
+        <google-map center="map.center" zoom="map.zoom" direction-service draggable="true"></google-map>
+            <div class="searchRoute">
+                <label for="startAddress" class="hidden">start address</label>
+                <input id="startAddress" type="text" value="" placeholder="Enter start address"/>
+                <label for="endAddress" class="hidden">end address</label>
+                <input id="endAddress" type="text" value="" placeholder="Enter end address"/>
+                <input type="submit" name="submit" value="submit" onClick="updateHistory(startAddress,endAddress); return getDirections();"/>
+
+                <!-- <input type="text" name="search" placeholder="Search Map" autocomplete="on" auto-complete ng-model="search" />
+                <ul auto-complete-results></ul>
+                <div direction-info></div> -->
+            </div><!--end searchRoute-->
+
+    </div>
+
+    <script src="http://maps.googleapis.com/maps/api/js?libraries=weather,geometry,visualization&sensor=false&language=en&v=3.14"></script>
+    <script data-require="angular.js@1.2.x" src="https://code.angularjs.org/1.2.16/angular.js" data-semver="1.2.16"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.underscore.js"></script>
+    <script src="http://rawgithub.com/angular-ui/angular-google-maps/master/dist/angular-google-maps.js"></script>
+    <script type='text/javascript' src='assets/js/info.js'></script>
+
+<!--script-->
+<!-- <script src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js'></script>
+<script src='http://maps.googleapis.com/maps/api/js?sensor=false'></script> -->
+<!-- <script src='http://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js'></script> -->
+<!-- <script src='bower_components/angular/angular.js'></script>
+<script src='bower_components/lodash/dist/lodash.underscore.min.js'></script>
+<script src='bower_components/angular-google-maps/dist/angular-google-maps.min.js'></script>
+<script src='assets/js/module.js'></script>
+<script src='assets/js/info.js'></script> -->
+</body>
+</html>

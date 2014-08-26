@@ -1,0 +1,41 @@
+html, body, #map_canvas {height: 100%; width: 100%; margin: 0px; }
+
+body {font-family: 'Open Sans', sans-serif; font-size: 16px/.75em; }
+
+.hidden {position: absolute; top: -9999px; left: -9999px;}
+
+header {padding: 10px;}
+
+h1 {font-family: 'Open Sans', sans-serif; font-size: 1em;}
+
+/*#map_canvas {position: relative; }
+
+.angular-google-map-container {position: absolute; top: 30px; bottom: 0; right: 0; left: 0; }*/
+
+.directions {right: 0; margin: 5% 1em 0 0; z-index: 1000; position: absolute; cursor: pointer;}
+
+/*.mapContainer input[type=text] {width: 100%; max-width: 300px; border-radius: 3px; box-shadow: 0 0 18px rgba(0,0,0,.2); height: 2.2em; padding: 5px; margin: 0.5em 1em; float: left;}*/
+input[type="text"] {max-width: 300px; margin: 0 0 .2em 0;}
+
+.adp table, .warnbox-content, .warnbox-c1 {max-width: 300px;}
+
+.searchRoute input[type=submit] {}
+
+/*input[type=submit] {background-color: #027073; color: #fefefe; height: 3.2em; font-weight: 700; width: 100%; max-width: 225px; border: none; margin: 0.5em 0 1em 0; padding: 5px; text-transform: uppercase; cursor: pointer;}
+
+input[type=submit]:hover {background-color: #66cccc; text-decoration: underline; }*/
+
+[auto-complete-container] {}
+
+/*[infowindow]{ background:#fff; border-radius:3px; -webkit-box-shadow:0 0 18px rgba(0,0,0,0.2); box-shadow:0 0 18px rgba(0,0,0,0.2); padding:0; max-width:100%; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; overflow:hidden; opacity:0; display:none;}
+[infowindow] .left{ background:#fff; padding:15px;}
+[infowindow] .right{ background:#fff; padding:15px;}
+[infowindow] [direction-info]{ font-size: 11px;}*/
+
+#theMap {position: absolute; top: 40px; bottom: 0; right: 0; left: 0; margin: 0; width: 100%; height: 100%; }
+
+.mapContainer {right: 0; margin: 5% 1em 0 0; width: 40%; margin: 5px; }
+
+img {max-width: none; }
+
+#wrongAddress {display:none; }
